@@ -5,7 +5,7 @@ function Friend({ name, isOnline }) {
     <li className="friend">
       {isOnline && <div className="green-dot" />}
       {name}
-      <VisuallyHidden>(Online)</VisuallyHidden>
+      {isOnline && <VisuallyHidden> (Online) </VisuallyHidden>}
     </li>
   );
 }
